@@ -1,0 +1,17 @@
+.page-header{
+    color: #449f81;
+}
+.bottom-hr{
+    width: 50px;
+    border: 5px solid #000b0e;
+    margin-top: 1px;
+}
+#required{
+    color: red;
+}
+.edit-button{
+   background-color: #11324D;
+}
+.delete-button{
+    background-color: #F54748;
+}
