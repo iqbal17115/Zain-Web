@@ -6,19 +6,15 @@
             <div class="navbar-brand-box" style="background-color: #F54748;">
                 <a href="{{url('/dashboard')}}" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{URL::asset('public/assets/images/logo.svg')}}" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="{{URL::asset('assets/images/logo-dark.png')}}" alt="" height="17">
                     </span>
                 </a>
 
                 <a href="{{url('/dashboard')}}" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{URL::asset('public/assets/images/logo.svg')}}" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <!-- <img src="{{ asset('brta-logo.png') }}" alt="" style="height: 40px;width:40px;"> -->
                     </span>
                 </a>
             </div>
@@ -60,7 +56,7 @@
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="" src="{{ asset('brta-logo.png') }}" alt="Header Language" style="height: 50px;">
+                    <!-- <img class="" src="{{ asset('brta-logo.png') }}" alt="Header Language" style="height: 50px;"> -->
                 </button>
             </div>
             <div class="dropdown d-none d-lg-inline-block ml-1">
@@ -71,8 +67,8 @@
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="rounded-circle header-profile-user" src="{{URL::asset('public/assets/images/users/avatar-1.jpg')}}"
-                        alt="Header Avatar">
+                    <!-- <img class="rounded-circle header-profile-user" src="{{URL::asset('public/assets/images/users/avatar-1.jpg')}}"
+                        alt="Header Avatar"> -->
                     <span class="d-none d-xl-inline-block ml-1">{{Auth::user()->name}}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
@@ -84,10 +80,6 @@
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             {{ csrf_field() }}
                     </form>
-                    {{-- <a class="dropdown-item text-danger" href="javascript:void();" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" wire:click="{{Auth::logout()}}"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> {{ __('Logout') }} </a> --}}
-                    {{-- <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form> --}}
                 </div>
             </div>
         </div>
